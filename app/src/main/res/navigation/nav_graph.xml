@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/nav_graph"
+        app:startDestination="@id/passwordMangerFragment">
+
+    <fragment
+            android:id="@+id/passwordMangerFragment"
+            android:name="com.atif.qamar.securepassword.fragment.PasswordManagerFragment"
+            android:label="PasswordMangerFragment"
+            tools:layout="@layout/password_manger_fragment">
+        <action
+                android:id="@+id/action_pwdHome_to_pwdAdd"
+                app:destination="@id/passwordManagerAddFragment" />
+        <action
+                android:id="@+id/action_pwdHome_to_pwdEdit"
+                app:destination="@id/passwordManagerEditFragment" />
+        <action
+                android:id="@+id/action_pwdHome_to_pwdChange"
+                app:destination="@id/passwordChangeFragment" />
+        <action
+                android:id="@+id/action_pwdHom_to_pwdGen"
+                app:destination="@id/passwordGeneratorFragment" />
+
+    </fragment>
+    <fragment
+            android:id="@+id/passwordManagerAddFragment"
+            android:name="com.atif.qamar.securepassword.fragment.PasswordManagerAddFragment"
+            android:label="PasswordManagerAddFragment"
+            tools:layout="@layout/password_manager_add_data_fragment">
+        <action
+                android:id="@+id/action_pwdAdd_to_pwdHome"
+                app:destination="@id/passwordMangerFragment"
+                app:popUpTo="@id/passwordMangerFragment"
+                app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+            android:id="@+id/passwordManagerEditFragment"
+            android:name="com.atif.qamar.securepassword.fragment.PasswordManagerEditFragment"
+            android:label="PasswordManagerEditFragment"
+            tools:layout="@layout/password_manager_edit_data_fragment">
+        <action
+                android:id="@+id/action_pwdEdit_to_pwdHome"
+                app:destination="@id/passwordMangerFragment"
+                app:popUpTo="@id/passwordMangerFragment"
+                app:popUpToInclusive="true" />
+
+        <argument
+                android:name="password_id"
+                app:argType="integer" />
+        <argument
+                android:name="type_category"
+                app:argType="string" />
+        <argument
+                android:name="title"
+                app:argType="string" />
+        <argument
+                android:name="user_name"
+                app:argType="string" />
+        <argument
+                android:name="password"
+                app:argType="string" />
+        <argument
+                android:name="url"
+                app:argType="string" />
+        <argument
+                android:name="created_on"
+                app:argType="long" />
+        <argument
+                android:name="updated_on"
+                app:argType="long" />
+    </fragment>
+    <fragment
+            android:id="@+id/passwordChangeFragment"
+            android:name="com.atif.qamar.securepassword.fragment.PasswordChangeFragment"
+            android:label="PasswordChangeFragment"
+            tools:layout="@layout/password_change_fragment">
+        <action
+                android:id="@+id/action_pwdChange_to_pwdHome"
+                app:destination="@id/passwordMangerFragment"
+                app:popUpTo="@id/passwordMangerFragment"
+                app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+            android:id="@+id/passwordGeneratorFragment"
+            android:name="com.atif.qamar.securepassword.fragment.PasswordGeneratorFragment"
+            android:label="password_generator_fragment"
+            tools:layout="@layout/password_generator_fragment">
+        <action
+                android:id="@+id/action_pwdGen_to_pwdHom"
+                app:destination="@id/passwordMangerFragment"
+                app:popUpTo="@id/passwordMangerFragment"
+                app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

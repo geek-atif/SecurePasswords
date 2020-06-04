@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">SecurePassword</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="secure_password">Secure Password</string>
+    <string name="password_image">password icon</string>
+    <string name="password_manger">Password Manager</string>
+    <string name="card">Cards</string>
+    <string name="identity_card">Identity Cards</string>
+    <string name="label_username">User Name/Mobile No</string>
+    <string name="home">Home</string>
+    <string name="passwordGen">Password Generator</string>
+    <string name="label_type">Select Type</string>
+    <string name="label_name">Select Name</string>
+    <string name="label_password">Password</string>
+    <string name="label_url">URL</string>
+    <string name="action_submit">submit</string>
+    <string name="add_password_title">Add Password</string>
+    <string name="password_manager_title">Password Manager</string>
+    <string name="password_manager_edit_title">Update Password Details</string>
+    <string name="linkedin">https://www.linkedin.com/</string>
+    <string name="facebook">https://www.facebook.com/</string>
+    <string name="instagram">https://www.instagram.com/</string>
+    <string name="twitter">https://twitter.com/</string>
+    <string name="whatsapp">https://www.whatsapp.com/</string>
+    <string name="flipkart">https://www.flipkart.com/</string>
+    <string name="amazon">https://www.amazon.in/</string>
+    <string name="ebay">https://in.ebay.com/</string>
+    <string name="myntra">https://www.myntra.com/</string>
+    <string name="makemytrip">https://www.makemytrip.com/</string>
+    <string name="trivago">https://www.trivago.in/</string>
+    <string name="cleartrip">https://www.cleartrip.com/</string>
+    <string name="easemytrip">https://www.easemytrip.com/</string>
+    <string name="gmail">http://mail.google.com/</string>
+    <string name="outlook">https://outlook.office.com/</string>
+    <string name="zoho">https://www.zoho.com/</string>
+    <string name="label_title">Title</string>
+    <string name="delete">Delete</string>
+    <string name="password_manager_mesg">Now save all password at one place by clicking on + icon on screen</string>
+    <string name="no_passowrd">No Password</string>
+    <string name="title">Password Details</string>
+    <string name="lock_screen_message">Now Only One Password to Remmber</string>
+    <string name="label_re_enter_password">Re-Enter Password</string>
+    <string name="submit">submit</string>
+    <string name="version">v1.0.0</string>
+    <string name="unlock">unlock</string>
+    <string name="change_password">change password</string>
+    <string name="label_oldpassword">Old Password</string>
+    <string name="password_update">Password Change</string>
+    <string name="passwordChange">Password Change</string>
+    <string name="text_generate">generate</string>
+    <string name="label_include_following">Include Following</string>
+    <string name="lb_alp_lower">Alphabets Lowercase (a-z)</string>
+    <string name="lb_alp_upper">Alphabets Uppercase (A-Z)</string>
+    <string name="lb_digit">Digits (0-9)</string>
+    <string name="lb_special_char">Special Characters</string>
+    <string name="password_lenght_mesg">Password Length(%s)</string>
+    <string name="label_type_">Type</string>
+
+</resources>
